@@ -20,7 +20,7 @@ class App extends Component{
         } else {
               try {
                const data = axios.post(
-                    'http://localhost:8000/users/login',
+                  process.env.REACT_APP_API_URL + '/users/login',
                     JSON.stringify({
                         'email': 'testtwo@test.com',
                         'password': 'testpassword'
