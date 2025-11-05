@@ -26,7 +26,7 @@ class App extends Component{
                         'password': 'testpassword'
                     }),
                     {
-                            'Access-Control-Allow-Origin': '*'
+                            headers: { "Content-Type": "application/json" }
                         }
                     
                   ).then(response =>{
