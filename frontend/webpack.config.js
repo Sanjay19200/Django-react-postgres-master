@@ -36,5 +36,12 @@ module: {
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+  new HtmlWebpackPlugin({
+    template: "./public/index.html",
+    filename: "index.html"
+  }),
+  new webpack.HotModuleReplacementPlugin()
+]
+
 };
